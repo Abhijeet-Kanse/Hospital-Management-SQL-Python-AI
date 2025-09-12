@@ -211,7 +211,7 @@ GROUP BY status;
 
 ---
 
-## 📋Results & Findings
+## 📋 Results & Findings
 - Hospital growth can be visualized using **patient registration trends**.  
 - **Doctors with higher appointment loads** may need support staff.  
 - Treatments vary in demand, highlighting **cost-effective services**.  
@@ -220,7 +220,7 @@ GROUP BY status;
 
 ---
 
-##✅ 7Conclusion
+## ✅ 7Conclusion
 This system is not only a **data management tool** but also a **decision-support system**.  
 
 - For **Administrators** → provides financial, staffing, and patient insights.  
