@@ -147,6 +147,7 @@ This system combines **robust database management** with **advanced AI capabilit
 
 ##  🔍 Analytics & Insights
 ### Q1:What is the trend of patient registrations over time?
+📌 Identifies **trend of patient and registrations** 
 ```
 SELECT DATE_FORMAT(registration_date, '%Y-%m') AS month,
        COUNT(*) AS new_patients
@@ -220,7 +221,7 @@ GROUP BY status;
 
 ---
 
-## ✅ 7Conclusion
+## ✅ Conclusion
 This system is not only a **data management tool** but also a **decision-support system**.  
 
 - For **Administrators** → provides financial, staffing, and patient insights.  
