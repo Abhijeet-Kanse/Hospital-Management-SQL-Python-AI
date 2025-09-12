@@ -146,7 +146,7 @@ This system combines **robust database management** with **advanced AI capabilit
 ---
 
 ##  🔍 Analytics & Insights
-### Q1:What is the trend of patient registrations over time?
+### Q1:What is the trend of new patient and registrations over time?
 📌 Identifies **trend of patient and registrations** 
 ```
 SELECT DATE_FORMAT(registration_date, '%Y-%m') AS month,
