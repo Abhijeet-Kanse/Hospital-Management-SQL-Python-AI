@@ -37,7 +37,8 @@ This system combines **robust database management** with **advanced AI capabilit
 - Intent Recognition (classify queries into categories)  
 - Entity Extraction (auto-detect patient IDs, doctor IDs, treatments)  
 - Contextual Responses with multi-turn dialogue support
-<img width="1917" height="867" alt="Screenshot 2025-09-12 181114" src="https://github.com/user-attachments/assets/cd5f95ad-39eb-4916-9e32-5096278bc3a3" />
+<img width="1919" height="866" alt="Screenshot 2025-09-16 120654" src="https://github.com/user-attachments/assets/25df7469-d1ad-4563-a986-7a6bffd63526" />
+
 
 
 ### 📊 Comprehensive Data Management
