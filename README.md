@@ -9,7 +9,7 @@
 ---
 
 ## 📖 Table of Contents
-- 🌟 [Project Overview](#-Project Overview)  
+- 🌟 [Project Overview](#-features)   
 - ✨ [Features](#-features)  
 - 🛠 [Tech Stack](#-tech-stack)  
 - 📥 [Installation](#-installation)  
