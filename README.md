@@ -24,9 +24,8 @@
 
 ---
 
-## 🌟 Introduction
-A comprehensive **AI-powered Hospital Management System** that provides intelligent querying and analysis of patient records, doctor information, appointments, treatments, and billing data through a **natural language interface**.  
-This system combines **robust database management** with **advanced AI capabilities** to deliver actionable insights for healthcare administration.
+## 🌟Project Overview
+Our hypothetical healthcare company aims to revolutionize patient care through AI-driven solutions while eliminating 40+ hours of weekly manual reporting. The goal is to deploy an intelligent AI automation platform that transforms raw healthcare data into actionable insights, predictive analytics, and automated business intelligence.
 
 ---
 
