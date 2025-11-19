@@ -1,4 +1,4 @@
-# 🏥 Hospital Management System – AI Assistant
+# Hospital Management System – AI Assistant
 
 [![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white)](https://streamlit.io/) 
 [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/) 
@@ -8,30 +8,30 @@
 
 ---
 
-## 📖 Table of Contents
-- 🌟 [Project Overview](#-features)   
-- ✨ [Features](#-features)  
-- 🛠 [Tech Stack](#-tech-stack)  
-- 📥 [Installation](#-installation)  
-- 🚀 [Usage](#-usage)  
-- 🗄 [Database Schema](#-database-schema)  
-- 📊 [Analytics & Insights](#-analytics--insights)  
-- 🧠 [AI Capabilities](#-ai-capabilities)  
-- 📸 [Screenshots](#-screenshots)  
-- 🔮 [Future Enhancements](#-future-enhancements)  
-- 🤝 [Contributing](#-contributing)  
-- 📄 [License](#-license)  
+## Table of Contents
+- [Project Overview](#-features)   
+- [Features](#-features)  
+- [Tech Stack](#-tech-stack)  
+- [Installation](#-installation)  
+- [Usage](#-usage)  
+- [Database Schema](#-database-schema)  
+- [Analytics & Insights](#-analytics--insights)  
+- [AI Capabilities](#-ai-capabilities)  
+- [Screenshots](#-screenshots)  
+- [Future Enhancements](#-future-enhancements)  
+- [Contributing](#-contributing)  
+- [License](#-license)  
 
 ---
 
-## 🌟Project Overview
+## Project Overview
 Our hypothetical healthcare company aims to revolutionize patient care through AI-driven solutions while eliminating 40+ hours of weekly manual reporting. The goal is to deploy an intelligent AI automation platform that transforms raw healthcare data into actionable insights, predictive analytics, and automated business intelligence.
 
 ---
 
-## ✨ Features
+## Features
 
-### 🤖 AI-Powered Interface
+### AI-Powered Interface
 - Natural Language Processing (NLP) for hospital queries  
 - Intent Recognition (classify queries into categories)  
 - Entity Extraction (auto-detect patient IDs, doctor IDs, treatments)  
@@ -40,20 +40,20 @@ Our hypothetical healthcare company aims to revolutionize patient care through A
 
 
 
-### 📊 Comprehensive Data Management
+### Comprehensive Data Management
 - Patient Management (demographics & insurance)  
 - Doctor Profiles (specialization & experience)  
 - Appointment Scheduling (status, visit reason, follow-ups)  
 - Treatments with Cost Tracking  
 - Billing System (methods & payment status)  
 
-### 📈 Advanced Analytics
+### Advanced Analytics
 - Financial Reports by treatment & payment method  
 - Appointment Statistics (scheduled vs completed vs cancelled)  
 - Patient Registration Trends  
 - Doctor Performance & workload analysis  
 
-### 🎯 User Experience
+### User Experience
 - Interactive **chat interface**  
 - **Quick action sidebar** for instant reports  
 - Responsive design for desktop & mobile  
@@ -75,7 +75,7 @@ Our hypothetical healthcare company aims to revolutionize patient care through A
 
 ---
 
-## 🚀 Objectives
+## Objectives
 - Build a normalized relational **hospital database**  
 - Implement an **AI-driven NLP query system**  
 - Deliver **analytics for decision-making**  
@@ -83,21 +83,21 @@ Our hypothetical healthcare company aims to revolutionize patient care through A
 
 ---
 
-## 🗄️3️Database Design
+## 3️Database Design
 ### Core Entities
 - Patients  
 - Doctors  
 - Appointments  
 - Treatments  
 - Billing  
-**🔗 Relationships:**  
+**Relationships:**  
 - A Patient → can have multiple Appointments  
 - An Appointment → links to a Doctor & Treatment  
 - A Treatment → generates a Billing entry  
 
 ---
 
-##  🧠AI Capabilities
+## AI Capabilities
 - **NLP Engine** → Naive Bayes intent classifier  
 - **Entity Recognition** → detects IDs & keywords  
 - **Dialogue Management** → context-aware conversation  
@@ -109,7 +109,7 @@ Our hypothetical healthcare company aims to revolutionize patient care through A
   - Financial analysis  
   - Statistics  
 ---
-## 🚀 Usage
+## Usage
 - **Example Queries**
 - **Patients** → "Show patient P001 details"
 
@@ -119,7 +119,7 @@ Our hypothetical healthcare company aims to revolutionize patient care through A
 
 - **Finance** → "Revenue analysis for treatments"
 
-## ⚡Quick Actions
+## Quick Actions
 
 - **Use the sidebar for**
 - **✔ Financial reports**
@@ -127,7 +127,7 @@ Our hypothetical healthcare company aims to revolutionize patient care through A
 - **✔ Registration trends**
 - **✔ Revenue analysis**
 
-## 🗄 Database Schema
+## Database Schema
 **Key Tables**
 
 - **Patients** → demographic, insurance info
@@ -145,9 +145,9 @@ Our hypothetical healthcare company aims to revolutionize patient care through A
 
 ---
 
-##  🔍 Analytics & Insights
+##  Analytics & Insights
 ### Q1:What is the trend of new patient and registrations over time?
-📌 Identifies **trend of patient and registrations** 
+ Identifies **trend of patient and registrations** 
 ```
 SELECT DATE_FORMAT(registration_date, '%Y-%m') AS month,
        COUNT(*) AS new_patients
@@ -160,7 +160,7 @@ limit 10;
 ---
 
 ### Q2: Doctor Workload
-📌 Identifies **most-consulted doctors** for better scheduling.
+ Identifies **most-consulted doctors** for better scheduling.
  
 ```
 SELECT d.doctor_id, d.first_name, d.last_name, d.specialization,
@@ -173,7 +173,7 @@ ORDER BY total_appointments DESC;
 <img width="945" height="273" alt="Screenshot 2025-09-12 175126" src="https://github.com/user-attachments/assets/8f08ac22-8e8e-4ab9-8f8f-8dcb38e587a3" />
 
 ### Q3: Treatment Revenue
-📌 Shows **most profitable treatments** for hospital strategy. 
+ Shows **most profitable treatments** for hospital strategy. 
 ```
 SELECT t.treatment_type, SUM(b.amount) AS total_revenue
 FROM Treatments t
@@ -185,7 +185,7 @@ ORDER BY total_revenue DESC;
 
 
 ### Q4: Billing Patterns
-📌 Evaluates **payment methods & defaults**.
+ Evaluates **payment methods & defaults**.
 ```
 SELECT 
     payment_method,
@@ -202,7 +202,7 @@ ORDER BY total_bills DESC;
 
 
 ### Q5: Appointment Trends
-📌 Tracks no-shows, cancellations, completion rates.
+ Tracks no-shows, cancellations, completion rates.
 ```
 SELECT status, COUNT(*) AS total
 FROM Appointments
@@ -212,7 +212,7 @@ GROUP BY status;
 
 ---
 
-## 📋 Results & Findings
+##  Results & Findings
 - Hospital growth can be visualized using **patient registration trends**.  
 - **Doctors with higher appointment loads** may need support staff.  
 - Treatments vary in demand, highlighting **cost-effective services**.  
@@ -221,7 +221,7 @@ GROUP BY status;
 
 ---
 
-## ✅ Conclusion
+##  Conclusion
 This system is not only a **data management tool** but also a **decision-support system**.  
 
 - For **Administrators** → provides financial, staffing, and patient insights.  
@@ -232,7 +232,7 @@ This system is not only a **data management tool** but also a **decision-support
 
 ---
 
-## 🔮Future Enhancements
+##  Future Enhancements
 - Integration with **Electronic Health Records (EHR)**  
 - AI-driven **predictive analytics** (demand, patient inflow)  
 - **Mobile-first app** for doctors/patients  
@@ -240,7 +240,7 @@ This system is not only a **data management tool** but also a **decision-support
 - **Blockchain** for secure medical records
 
 ---
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - **Streamlit team for the framework**
 
@@ -248,7 +248,7 @@ This system is not only a **data management tool** but also a **decision-support
 
 - **Healthcare professionals for domain expertise**
 
-- **Open-source community 💙**
+- **Open-source community**
 ---
 ## 👨‍💻 Author
 **Abhijeet Kanse**  
@@ -256,4 +256,3 @@ This system is not only a **data management tool** but also a **decision-support
 - 🌐 [GitHub Profile](https://github.com/Abhijeet-Kanse)
 - ⭐ If you like this project, give it a star on GitHub!
 ---
-Built with ❤️ for the healthcare community
